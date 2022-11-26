@@ -9,14 +9,14 @@ This repository shall mainly contain directories at the topmost level. Each dire
 
    `# T<classPrefix>-<attributePrefix>: <comment>`
 
-   where <classPrefix> is class prefix in upper-case; <attributePrefix> is the attribute or method prefix in uppercase, and <comment> is the body of the comment. The prefixes are defined in the section below. For example, to start a comment for an assert call you are about to make to test the `save()` method of the BaseModel class, you would start like so:
+   where `<classPrefix>` is class prefix in upper-case; `<attributePrefix>` is the attribute or method prefix in uppercase, and `<comment>` is the body of the comment. The prefixes are defined in the section below. For example, to start a comment for an assert call you are about to make to test the `save()` method of the BaseModel class, you would start like so:
 
    `# TBASE-SV: ...`
 
    This can be read as: you are writing a test [T] for the BaseModel class [BASE], on the save() method [SV]. This syntax will enable the repo maintainer to easily extract the comments for separate documentation.
 
 ## Prefixes
-BaseModel (prefix: BASE)
+*class* BaseModel (prefix: BASE)
 | Attribute/method | Prefix |
 | ---------------- | ------ |
 | id               | ID     |
@@ -25,3 +25,11 @@ BaseModel (prefix: BASE)
 | save()           | SV     |
 | to_dict()        | TD     |
 | str()            | SR     |
+
+*class* User (prefix: USER)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| email            | EM     |
+| password         | PW     |
+| first_name       | FN     |
+| last_name        | LN     |

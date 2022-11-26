@@ -15,6 +15,8 @@ This repository shall mainly contain directories at the topmost level. Each dire
 
    This can be read as: you are writing a test [T] for the BaseModel class [BASE], on the save() method [SV]. This syntax will enable the repo maintainer to easily extract the comments for separate documentation.
 
+   It is highly encouraged that, apart from writing the comments on a new line before the assert line, you leave a blank line before the comment line. See the test_base_modelline before the comment line. See the `test_base_model.py` file, in the AirBnB_console directory for practical examples to follow. file, in the AirBnB_console directory for practical examples to follow.
+
 ## Prefixes
 *class* BaseModel (prefix: BASE)
 | Attribute/method | Prefix |
@@ -26,6 +28,8 @@ This repository shall mainly contain directories at the topmost level. Each dire
 | to_dict()        | TD     |
 | str()            | SR     |
 
+
+
 *class* User (prefix: USER)
 | Attribute/method | Prefix |
 | ---------------- | ------ |
@@ -33,3 +37,62 @@ This repository shall mainly contain directories at the topmost level. Each dire
 | password         | PW     |
 | first_name       | FN     |
 | last_name        | LN     |
+
+
+
+*class* State (prefix: STAT)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| name		   | NM     |
+
+
+
+*class* City (prefix: CITY)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| state_id	   | SI     |
+| name		   | NM     |
+
+
+
+*class* Amenity (prefix: AMEN)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| name		   | NM     |
+
+
+
+*class* Place (prefix: PLAC)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| city_id	   | CI     |
+| user_id	   | UI     |
+| name		   | NM     |
+| description	   | DS     |
+| number_rooms	   | NR     |
+| number_bathrooms | NB     |
+| max_guest	   | MG     |
+| price_by_night   | PN     |
+| latitude	   | LA     |
+| longitude	   | LO     |
+| amenity_ids	   | AI     |
+
+
+
+*class* Review (prefix: REVI)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| place_id	   | PI     |
+| user_id	   | UI     |
+| text		   | TX     |
+
+
+
+*class* FileStorage (prefix: FILE)
+| Attribute/method | Prefix |
+| ---------------- | ------ |
+| all()		   | AL     |
+| new()		   | NW     |
+| save()	   | SV     |
+| reload()	   | RL     |
+| storage	   | SG     |

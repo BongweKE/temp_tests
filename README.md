@@ -16,8 +16,7 @@ This repository shall mainly contain directories at the topmost level. Each dire
    This can be read as: you are writing a test [T] for the BaseModel class [BASE], on the save() method [SV]. This syntax will enable the repo maintainer to easily extract the comments for separate documentation.
 
 ## Prefixes
-| BaseModel (prefix: BASE)  |
-| ------------------------- |
+BaseModel (prefix: BASE)
 | Attribute/method | Prefix |
 | ---------------- | ------ |
 | id               | ID     |

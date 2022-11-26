@@ -15,7 +15,7 @@ This repository shall mainly contain directories at the topmost level. Each dire
 
    This can be read as: you are writing a test [T] for the BaseModel class [BASE], on the save() method [SV]. This syntax will enable the repo maintainer to easily extract the comments for separate documentation.
 
-   It is highly encouraged that, apart from writing the comments on a new line before the assert line, you leave a blank line before the comment line. See the test_base_modelline before the comment line. See the `test_base_model.py` file, in the AirBnB_console directory for practical examples to follow. file, in the AirBnB_console directory for practical examples to follow.
+   It is highly encouraged that, apart from writing the comments on a new line before the assert line, you leave a blank line before the comment line. See the `test_base_model.py` file, in the AirBnB_console directory for practical examples to follow.
 
 ## Prefixes
 *class* BaseModel (prefix: BASE)

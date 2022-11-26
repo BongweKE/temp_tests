@@ -5,7 +5,7 @@ This repository is for the purpose of collaborating on building test suites for 
 This repository shall mainly contain directories at the topmost level. Each directory shall contain test, and other, files relating to the different parts of the AirBnB clone project. The directories include:
 - **AirBnB_console**
 
-   The tests here will be based on classes (and their attributes and methods), which are defined in separate files. The test files are thus going to be based on the different classes, with each test file containing tests for only one class. For every assert method called to test a condition, there must be a corresponding comment made describing the test purpose. This comment should appear on a separate line before the assert method call, and follow the following syntax:
+   This directory will contain tests for the first part of the project - the console. The tests here will be based on classes (and their attributes and methods), which are defined in separate files. The test files are thus going to be based on the different classes, with each test file containing tests for only one class. For EVERY assert method called to test a condition, there must be a corresponding comment made describing the test purpose. This comment should appear on a separate line before the assert method call, and follow the following syntax:
 
    `# T<classPrefix>-<attributePrefix>: <comment>`
 

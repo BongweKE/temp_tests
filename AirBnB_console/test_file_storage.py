@@ -24,12 +24,6 @@ class TestFileStorage(unittest.TestCase):
         B = BaseModel()
         U = User()
 
-    def test_objects(self):
-        ''' Tests the __objects attribute.'''
-
-        # TFILE-OB: test that type of __object is dict
-        self.assertIs(type(storage.all()), dict)
-
     def test_all(self):
         ''' Tests the all method.'''
         types = [int, float, str, list, tuple, set, None]
@@ -69,7 +63,12 @@ class TestFileStorage(unittest.TestCase):
     # ++++++++++++++++++++++++++
     # start tests for attributes
     # ++++++++++++++++++++++++++
-# =========ATTRIBUTE TESTS HERE=======
+
+    def test_objects(self):
+        ''' Tests the __objects attribute.'''
+
+        # TFILE-OB: test that type of __object is dict
+        self.assertIs(type(storage.all()), dict)
     # +++++++++++++++++++++++
     # end test for attributes
     # +++++++++++++++++++++++

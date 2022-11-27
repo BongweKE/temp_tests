@@ -20,7 +20,17 @@ TBASE-ST: test that __str__() returns a string object
 
 ======= test_place.py ======
 
-
+TPLAC-CI: test if city_id is a string object
+TPLAC-UI: test if city_id is a string object
+TPLAC-NM: test if name is a string object
+TPLAC-DS: test if description is a string object
+TPLAC-NR: test if name is an int object
+TPLAC-NB: test if number_bathrooms is an int object
+TPLAC-MG: test if max_guest is an int object
+TPLAC-PN: test if price_by_night is an int object
+TPLAC-LA: test if latitude is a float object
+TPLAC-LO: test if longitude is a float object
+TPLAC-AI: test if amenity_ids is a list object
 
 
 
@@ -32,13 +42,14 @@ TBASE-ST: test that __str__() returns a string object
 
 ======= test_city.py ======
 
-
+TAMEN-NM: test if name is a string object
+TAMEN-SI: test if state_id is a string
 
 
 
 ======= test_amenity.py ======
 
-
+TAMEN-NM: test if name is a string object
 
 
 
@@ -50,7 +61,7 @@ TBASE-ST: test that __str__() returns a string object
 
 ======= test_file_storage.py ======
 
-TFILE-OB: test that type of __object is dict
 TFILE-AL: test that all() returns an object of only one type - dict
 TFILE-NW: test that new() adds new instances of all clss to __object
 TFILE-SV: test that current __objects is actually saved to file.
+TFILE-OB: test that type of __object is dict

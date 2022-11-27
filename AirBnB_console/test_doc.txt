@@ -45,3 +45,9 @@ TBASE-ST: test that __str__() returns a string object
 ======= test_review.py ======
 
 
+
+
+
+======= test_file_storage.py ======
+
+TFILE-OB: test that type of __object is dict

@@ -96,6 +96,7 @@ This repository shall mainly contain directories at the topmost level. Each dire
 | save()	   | SV     |
 | reload()	   | RL     |
 | storage	   | SG     |
+| `__objects`	   | OB     |
 
 
 ## Workflow Overview

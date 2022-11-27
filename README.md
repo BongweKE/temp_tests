@@ -104,7 +104,7 @@ In this section, an attempt will be made to summarize the basic flow, from editi
 Every collaborator should create a branch from `main` whenever they want to modify a test file. So, whenever collab_A wants to add one or more tests to a test file, collab_A should:
 1. create a branch from `main`;
 2. read the documentation in the `test_doc.txt` file to know what tests are already available;
-3. add tests as they want to in the respective delimited sections (i.e. sections for method and attribute tests). Template test files are already available initialized with the respective sections. These are the files where all tests will be written;
+3. add tests as they want to in the respective delimited sections (i.e. sections for method and attribute tests). Template test files are already available initialized with the respective sections. These are the files where all tests will be written. to test for a method or attribute, simply prefix `test_` to the method or attribute name and use that as the name of the test method. E.g. to write a test method for the `number_rooms` attribute of the `Place`, the method header would look like so: `def test_number_rooms(self, ...)`;
 4. for every test (i.e. for every assert method called), add a comment summarizing the purpose of the test in the prescribed format. So each comment starts on a separate line with something like `# TUSER-EM: ...` or `# TAMEN-PI: ...`;
 5. ensure their test works;
 6. after being done with adding tests and associated comments, and testing their new tests, push to their branch;

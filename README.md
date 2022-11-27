@@ -96,3 +96,17 @@ This repository shall mainly contain directories at the topmost level. Each dire
 | save()	   | SV     |
 | reload()	   | RL     |
 | storage	   | SG     |
+
+
+## Workflow Overview
+In this section, an attempt will be made to summarize the basic flow, from editing a test file to issuing a pull request, for a hypothetical collaborator A (hereafter referred to as collab_A).
+
+Every collaborator should create a branch from `main` whenever they want to modify a test file. So, whenever collab_A wants to add one or more tests to a test file, collab_A should:
+1. create a branch from `main`;
+2. add tests as they want to in the respective delimited sections (i.e. sections for method and attribute tests). Template test files are already available initialized with the respective sections. These are the files where all tests will be written;
+3. for every test (i.e. for every assert method called), add a comment summarizing the purpose of the test in the prescribed format. So each comment starts on a separate line with something like `# TUSER-EM: ...` or `# TAMEN-PI: ...`;
+4. ensure their test works;
+5. after being done with adding tests and associated comments, and testing their new tests, push to their branch;
+6. issue a pull request.
+
+Please take care not to merge with `main` yourself - a pull request MUST be issued. Also, once your branch is merged it will be deleted from remote. Ensure to delete your local copy too. The next time you need to modify test files, you have to create a new branch (which can have the same name as previous deleted branch). This is meant to enable you get the latest copy of the test files from `main`.

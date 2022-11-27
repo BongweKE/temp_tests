@@ -47,8 +47,17 @@ class TestFileStorage(unittest.TestCase):
 
     def test_save(self):
         ''' Tests the save() method.'''
+        storage.save()
         storage.reload()
         old_storage = storage.all().copy()  # collect present __objects
+# --------------------------------------------
+        storage.save()
+        storage.reload()
+        newish_storage = storage.all().copy()
+
+        # TFILE-SV: test that no change in storage when no new instance creatd
+        self.assertEqual(old_storage.keys(), newish_storage.keys())
+# -------------------------------------------
         Place(), State()  # create two new instances added to __objects autom.
         storage.save()  # save __objects with newly added instances
         storage.reload()

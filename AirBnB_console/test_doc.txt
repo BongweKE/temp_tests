@@ -14,7 +14,15 @@ TBASE-ST: test that __str__() returns a string object
 
 ======= test_user.py ======
 
-
+TUSER-ID: test id is a uuid4 string
+TUSER-CA: test that created at exists
+TUSER-CA: test created_at is a datetime object
+TUSER-UA: test updated_at is not None object.
+TUSER-UA: test updated_at is a datetime object.
+TUSER-SV: test updated_at was updated on save.
+TUSER-TD: test that to_dict produces expected keys
+TUSER-TD: test that to_dict returns type dict
+TUSER-ST: test that __str__() returns a string object
 
 
 
@@ -31,31 +39,74 @@ TPLAC-PN: test if price_by_night is an int object
 TPLAC-LA: test if latitude is a float object
 TPLAC-LO: test if longitude is a float object
 TPLAC-AI: test if amenity_ids is a list object
+TPLAC-ID: test id is a uuid4 string
+TPLAC-CA: confirm created_at exists
+TPLAC-CA: test created_at is a datetime object
+TPLAC-UA: test updated_at is not None object.
+TPLAC-UA: test updated_at is a datetime object.
+TPLAC-SV: test updated_at was updated on save.
+TPLAC-TD: test that to_dict produces expected keys
+TPLAC-TD: test that to_dict returns type dict
+TPLAC-ST: test that __str__() returns a string object
 
 
 
 ======= test_state.py ======
 
-
+TSTAT-ID: test id is a uuid4 string
+TSTAT-CA: test that create_at exists
+TSTAT-CA: test created_at is a datetime object
+TSTAT-UA: test updated_at is not None object.
+TSTAT-UA: test updated_at is a datetime object.
+TSTAT-SV: test updated_at was updated on save.
+TSTAT-TD: test that to_dict produces expected keys
+TSTAT-TD: test that to_dict returns type dict
+TSTAT-ST: test that __str__() returns a string object
 
 
 
 ======= test_city.py ======
 
-TAMEN-NM: test if name is a string object
-TAMEN-SI: test if state_id is a string
+TCITY-NM: test if name is a string object
+TCITY-SI: test if state_id is a string
+TCITY-ID: test id is a uuid4 string
+TCITY-CA: confirm that created at exists
+TCITY-CA: test created_at is a datetime object
+TCITY-UA: test updated_at is not None object.
+TCITY-UA: test updated_at is a datetime object.
+TCITY-SV: test updated_at was updated on save.
+TCITY-TD: test that to_dict produces expected keys
+TCITY-TD: test that to_dict returns type dict
+TCITY-ST: test that __str__() returns a string object
 
 
 
 ======= test_amenity.py ======
 
 TAMEN-NM: test if name is a string object
+TAMEN-ID: test id is a uuid4 string
+TAMEN-CA: Confirm that created_at exists
+TAMEN-CA: test created_at is a datetime object
+TAMEN-UA: test updated_at is not None object.
+TAMEN-UA: test updated_at is a datetime object.
+TAMEN-SV: test updated_at was updated on save.
+TAMEN-TD: test that to_dict produces expected keys
+TAMEN-TD: test that to_dict returns type dict
+TAMEN-ST: test that __str__() returns a string object
 
 
 
 ======= test_review.py ======
 
-
+TREVI-ID: test id is a uuid4 string
+TREVI-CA: enure created_at exists
+TREVI-CA: test created_at is a datetime object
+TREVI-UA: test updated_at is not None object.
+TREVI-UA: test updated_at is a datetime object.
+TREVI-SV: test updated_at was updated on save.
+TREVI-TD: test that to_dict produces expected keys
+TREVI-TD: test that to_dict returns type dict
+TREVI-ST: test that __str__() returns a string object
 
 
 
@@ -63,5 +114,6 @@ TAMEN-NM: test if name is a string object
 
 TFILE-AL: test that all() returns an object of only one type - dict
 TFILE-NW: test that new() adds new instances of all clss to __object
+TFILE-SV: test that no change in storage when no new instance creatd
 TFILE-SV: test that current __objects is actually saved to file.
 TFILE-OB: test that type of __object is dict

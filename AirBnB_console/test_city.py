@@ -23,14 +23,14 @@ class TestCity(unittest.TestCase):
 
         C = City()
 
-        # TAMEN-NM: test if name is a string object
+        # TCITY-NM: test if name is a string object
         self.assertIs(type(C.name), str)
 
     def test_state_id(self):
         ''' Tests for state_id attribute.'''
         C = City()
 
-        # TAMEN-SI: test if state_id is a string
+        # TCITY-SI: test if state_id is a string
         self.assertIs(type(C.state_id), str)
 
     def test_id(self):

@@ -3,7 +3,7 @@
 """
 
 
-class TestPlace(unittest.TestCase):
+class TestFileStorage(unittest.TestCase):
     """
     """
     # -----------------------

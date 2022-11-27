@@ -1,0 +1,47 @@
+======= test_base_model.py ======
+
+TBASE-ID: test id is a uuid4 string
+TBASE-CA
+TBASE-CA: test created_at is a datetime object
+TBASE-UA: test updated_at is not None object.
+TBASE-UA: test updated_at is a datetime object.
+TBASE-SV: test updated_at was updated on save.
+TBASE-TD: test that to_dict produces expected keys
+TBASE-TD: test that to_dict returns type dict
+TBASE-ST: test that __str__() returns a string object
+
+
+
+======= test_user.py ======
+
+TUSER-EM:
+
+
+
+======= test_place.py ======
+
+TPLAC-NR:
+
+
+
+======= test_state.py ======
+
+
+
+
+
+======= test_city.py ======
+
+
+
+
+
+======= test_amenity.py ======
+
+
+
+
+
+======= test_review.py ======
+
+

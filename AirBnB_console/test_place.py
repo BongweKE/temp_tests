@@ -10,6 +10,7 @@ class TestPlace(unittest.TestCase):
     # start tests for methods
     # -----------------------
 # =========METHOD TESTS HERE==========
+    #TPLAC-NR:
     # ------------------------
     # end of tests for methods
     # ------------------------

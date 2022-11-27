@@ -10,6 +10,7 @@ class TestUser(unittest.TestCase):
     # start tests for methods
     # -----------------------
 # =========METHOD TESTS HERE==========
+    # TUSER-EM:
     # ------------------------
     # end of tests for methods
     # ------------------------

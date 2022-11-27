@@ -51,3 +51,6 @@ TBASE-ST: test that __str__() returns a string object
 ======= test_file_storage.py ======
 
 TFILE-OB: test that type of __object is dict
+TFILE-AL: test that all() returns an object of only one type - dict
+TFILE-NW: test that new() adds new instances of all clss to __object
+TFILE-SV: test that current __objects is actually saved to file.

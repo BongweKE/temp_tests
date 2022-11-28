@@ -9,11 +9,16 @@ TBASE-SV: test updated_at was updated on save.
 TBASE-TD: test that to_dict produces expected keys
 TBASE-TD: test that to_dict returns type dict
 TBASE-ST: test that __str__() returns a string object
+TBASE-ST: test that __str__ returns a string for the right class
 
 
 
 ======= test_user.py ======
 
+TUSER-EM: test if email is a string object
+TUSER-PW: test if password is a string object
+TUSER-FN: test if first_name is a string object
+TUSER-LN: test if last_name is a string object
 TUSER-ID: test id is a uuid4 string
 TUSER-CA: test that created at exists
 TUSER-CA: test created_at is a datetime object
@@ -53,6 +58,7 @@ TPLAC-ST: test that __str__() returns a string object
 
 ======= test_state.py ======
 
+TSTAT-NM: test if name is a string object
 TSTAT-ID: test id is a uuid4 string
 TSTAT-CA: test that create_at exists
 TSTAT-CA: test created_at is a datetime object
@@ -98,6 +104,9 @@ TAMEN-ST: test that __str__() returns a string object
 
 ======= test_review.py ======
 
+TREVI-PI: test if place_id is a string object
+TREVI-UI: test if user_id is a string object
+TREVI-TX: test if text is a string object
 TREVI-ID: test id is a uuid4 string
 TREVI-CA: enure created_at exists
 TREVI-CA: test created_at is a datetime object
@@ -107,13 +116,3 @@ TREVI-SV: test updated_at was updated on save.
 TREVI-TD: test that to_dict produces expected keys
 TREVI-TD: test that to_dict returns type dict
 TREVI-ST: test that __str__() returns a string object
-
-
-
-======= test_file_storage.py ======
-
-TFILE-AL: test that all() returns an object of only one type - dict
-TFILE-NW: test that new() adds new instances of all clss to __object
-TFILE-SV: test that no change in storage when no new instance creatd
-TFILE-SV: test that current __objects is actually saved to file.
-TFILE-OB: test that type of __object is dict
